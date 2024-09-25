@@ -1,0 +1,145 @@
+/*
+Theme Name: Storefront Child for Elm
+Description: Customized styles for the ElmElectronics.com web site
+Author: Elm Electronics
+Template: storefront
+Version: 1.0
+*/
+
+/* the entire page */
+html{margin:0 auto;padding:0;border:0}
+
+/* the header area */
+.site-header{background-color:transparent}
+.site-search{border:1px solid #999;padding:0 2px 2px 2px}
+
+/* the logo */
+.site-logo-anchor{width:16% !important;max-width:128px !important}
+
+/* the site title and tagline */
+.site-title {display:none;}
+.site-description {display:none;}
+
+/* the footer area */
+.site-footer{background-color:transparent}
+.site-info{padding:0}
+.footer-widgets{padding:0}
+
+/* the text area */
+.site-content{background-color:white}
+.woocommerce-breadcrumb{font-size:75%;font-style:normal;font-family:sans-serif;color:#004D99}
+.storefront-breadcrumb{padding:6px 0px 9px;margin:0}
+#primary.content-area {margin-bottom:0}
+
+div.myindent{padding-left:10%}
+
+h1,h2,h3,h4,h5,h6{font-style:normal;font-family:sans-serif;font-weight:bold;color:#000}
+h1{font-size:150%}
+h2{font-size:135% !important}
+h3{font-size:117%}
+/* a fix for the rapid order pages - they use h3s and it's too big */
+.wcro-products h3{font-size:0.9em}
+h4{font-size:100%}
+h5{font-size:75%}
+h6{font-size:62.5%}
+
+p,ul{text-align:justify}
+code{font-family:"Courier New",Courier,"Lucida Console",monospace;color:#000;font-size:100%;background-color:transparent;margin-left:12%}
+
+a:link{color:#003366;text-decoration:none !important}
+a:visited{color:#004D99;text-decoration:none !important}
+a:hover{text-decoration:underline}
+a.button.product_type_variable.add_to_cart_button{color:#fff}
+a.button.wc-backward{color:#fff}
+a.button.wcro_button{color:#fff}
+a.button{color:#fff}
+
+div.arrow{float:right;text-align:center}
+
+/* tables */
+table.elm-tbl{border-collapse:collapse;border-spacing:0;border:1px solid #333;margin:0 auto;padding:0;background:none}
+table.elm-tbl th{border:1px solid #333}
+table.elm-tbl td{border:1px solid #333}
+th.my-tbl-hdr{padding:.75em 0}
+table.elm-qty{display:inline-table;border-collapse:collapse}
+table.elm-qty td{text-align:center; padding:.25em 1em .25em 1em}
+table.elm-qty hr{margin:0 auto 0 auto}
+
+/* images */
+img{border-style:none}
+img.centered{display:block;margin-left:auto;margin-right:auto}
+img.elm-icon{display:inline;border:none}
+
+/* the product pages */
+.woocommerce .quantity input[type="number"], .woocommerce-page .quantity input[type="number"], .woocommerce .input-text .qty .text, .wcro_form.wcro_centered input.input-text.qty.text{color:black;font-size:1em;height:100%;min-width:4.8em;margin-right:32px}
+.woocommerce-variation-add-to-cart{float:left}
+h3.elm-pr-page{margin:0.53em 0 0 0}
+/* this one is the description under the chip name */
+.woocommerce-product-details__short-description p{margin: 0; text-align:left;}
+
+/* rapid order plugin */
+.wcro-button{color:#ddd}
+td.wcro_thumb{padding:5px 0 5px 20px}
+
+
+/* --- special for wide screens --- */
+@media screen and (min-width:769px) {
+/* we have room - add space on either side */
+html{width:90%}
+/* the content */
+.storefront-primary-navigation{background:#D0D0D0}
+.site-content{margin:32px 5%;padding:42px}
+.elm-welcome{position: relative; top: -60px; width: 100%; height: 60px; margin: 32px 5%; background-color: white;}
+.elm-freeshipping{position: relative; top: -60px; margin-left:auto;margin-right:auto; width: 90%; background-color: #003366;}
+.elm-shrinkingh3{color:white;text-align:center;font-size:117%;}
+}
+
+/* --- special for smaller screens --- */
+@media screen and (max-width:767px) {
+/* a small logo */
+.site-header .site-branding, .site-header .site-logo-anchor, .site-header .site-logo-link,.site-branding .site-logo-anchor {width:5% !important}
+/* no more big side borders */
+html{width:100%}
+/* the content */
+.storefront-primary-navigation{background-color:transparent}
+/* add 10 px left and right so users don't think they're missing anything */
+.site-content{margin:0 10px;padding:0}
+.elm-welcome{position: relative; top: -60px; width: 109%; height: 60px; margin: 0 32px 0 -20px; padding: 0 48px 0 32px; background-color: white;}
+.elm-freeshipping{position: relative; top: 0; margin-left:auto;margin-right:auto; width: 90%; background-color: #003366;}
+.elm-shrinkingh3{color:white;text-align:center;font-size:100%;}
+}
+
+/* --- only for printing --- */
+@media print {
+html,body{padding:2%;background:#FFF;font-size:80%}
+*{background:transparent;color:#000;box-shadow:none;text-shadow:none}
+a,a:visited{color:#000;text-decoration:none}
+/* the iBook image */
+.wp-1mage-1256 {width:1cm;height:1cm}
+/* the PDF image */
+.wp-1mage-1174 {width:0.76cm;height:1cm}
+h3, h4 {page-break-after: avoid}
+ul, img {page-break-inside: avoid}
+hr.padded{height:.1em;width:100%;border-width:0;color:white;background-color:white;margin:1.5em 0}
+}
+
+/*
+     FILE ARCHIVED ON 01:23:57 Mar 20, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:10:48 Sep 25, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.582
+  exclusion.robots: 0.026
+  exclusion.robots.policy: 0.016
+  esindex: 0.011
+  cdx.remote: 7.568
+  LoadShardBlock: 129.219 (3)
+  PetaboxLoader3.datanode: 72.341 (4)
+  PetaboxLoader3.resolve: 193.63 (2)
+  load_resource: 179.542
+*/

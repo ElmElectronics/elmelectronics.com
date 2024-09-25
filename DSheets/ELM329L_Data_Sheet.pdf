@@ -1,0 +1,48 @@
+<HTML>
+
+<head>
+<TITLE>404 - File Not Found Error</TITLE>
+
+<!-- Auto reloads the page (after 1 second):
+************************************************************ -->
+<meta http-equiv="refresh" content="1;url='https://www.elmelectronics.com/'">
+
+</head>
+
+
+<body bgcolor="#F2F2F2" background="https://www.elmelectronics.com/images/bg-chips.jpg">
+
+<!-- the header images -->
+<div>
+<img src="images/elm-logo-base.png" height="128" width="128" alt="">
+<img src="images/spacer.png" height="1" width="190" alt="">
+<img src="images/elmelectronics-base.png" height="100" width="400" alt="Elm Electronics">
+</div>
+
+
+<!-- the white text area -->
+<div id="text" style="position:absolute; top:140px; left:150px; width:640px; min-height:472px;
+	padding-top:105px; padding-right:50px; padding-bottom:24px; padding-left:130px;
+	background-color:white; border:1px solid black">
+
+<h3>404 - File Not Found Error</h3>
+
+<br>
+<blockquote>
+You should be automatically redirected to our home page, but if that doesn't work,<br>
+then click this link:
+<center>
+<p>
+<a href="https://www.elmelectronics.com/">https://www.elmelectronics.com/</a>
+</center>
+</blockquote>
+
+
+<!-- the footer -->
+<div style="position:absolute;left:0;bottom:10px;width:100%;text-align:center;font-size:75%">
+&copy;2023&nbsp;Elm&nbsp;Electronics<br>
+</div>
+
+
+</body>
+</HTML>

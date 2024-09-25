@@ -1,0 +1,115 @@
+/* Resetting the HTML */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img,abbr,acronym{border:0}
+address,caption,cite,code,dfn,em,strong,var,p{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th,td{text-align:left}
+th{text-align:center}
+h1,h2,h3,h4,h5,h6,th{font-size:100%;font-style:normal;font-weight:bold}
+q:before,q.after{content:" "}
+
+
+/*    CSS for the Elm Electronics web site    */
+/* really for browsers of 800 px wide or more */
+/* smaller screens should use the mobile site */
+
+html{margin:0;padding:0;border:0;width:100%}
+body{background:#f2f2f2 url("images/bg-chips.jpg");font-family:Arial,Helvetica,Verdana,sans-serif;color:#000;font-size:87.5%}
+
+h1{font-family:sans-serif;color:#000;font-size:200%}
+h2{font-family:sans-serif;color:#000;font-size:160%}
+h3{font-family:sans-serif;color:#000;font-size:125%}
+h4{font-family:sans-serif;color:#000;font-size:100%}
+h5{font-family:sans-serif;color:#000;font-size:.75%}
+h6{font-family:sans-serif;color:#000;font-size:62.5%}
+
+a:link{color:#003366;text-decoration:none;outline:none}
+a:visited{color:#0033CC;text-decoration:none}
+a:hover{text-decoration:underline}
+
+div.myblockquote{position:relative;padding:0 32px}
+div.bottomspace{position:relative;min-height:80px}
+div.contenttext{position:relative;top:-20px;padding-bottom:64px}
+div.arrow{position:absolute;right:0;text-align:center}
+
+p{margin:1em 0 0 0;font-size:1em;text-align:justify}
+p.centered{margin:1em 0 0 0;text-align:center}
+p.section{font-size:100%;font-weight:bold;margin:2.5em 0 0.5em  0}
+p.question{font-size:100%;font-weight:bold;margin:2.5em 32px 0.5em 32px}
+
+.indent{padding-left:32px}
+.sm_indent{font-size:75%;font-weight:normal;padding-left:24px;margin:0}
+
+code{font-family:"Courier New",Courier,"Lucida Console",monospace;color:#000;font-size:100%}
+
+img{border-style:none}
+img.centered{display:block;margin-left:auto;margin-right:auto}
+
+td.mid{text-align:center}
+
+ol,ul{list-style-type:disc;list-style-position:outside;padding:.5em 0 .25em 0;font-size:1em;}
+li{padding:0 0 .25em 0;margin-left:32px}
+
+hr{height:1px;width:100%;border-width:0;margin: 0.5em 0;color:gray;background-color:gray}
+hr.padded{height:1px;width:100%;border-width:0;margin: 48px 0;color:gray;background-color:gray}
+
+
+/* for wide screens */
+@media screen and (min-width:1001px) {
+div.container{position:relative;padding-left:10%}
+div.header_pcscreen{position:relative;left:-70px;width:95%;max-width:1162px;height:159px}
+div.header_print{position:relative;left:64px}
+div.content{position:relative;margin-left:0px;width:74%;max-width:940px;padding:0 8% 24px;min-height:500px;background-color:white;border:1px solid black;text-align:justify}
+div.menu_row1{position:relative;top:-16px;left:-15%;min-width:512px;z-index:1}
+div.menu_row2{position:relative;top:-16px;left:-15%;min-width:728px;z-index:1}
+div.footer{position:absolute;left:0;bottom:18px;width:100%;text-align:center;font-size:75%}
+div.infobox{position:relative;width:90%;padding:0 32px;text-align:left}
+div.infotext{display:inline-block;vertical-align:top;width:75%;text-align:justify}
+div.infolinks{display:inline-block;vertical-align:top;width:120px;margin-left:2%}
+div.infoicon{margin:0 0 24px 40px;font-size:75%;text-align:center}
+div.search{position:absolute;top:18px;right:12px;z-index:3}
+img.padright{padding:0 1% 0 0}
+}
+
+
+/* for smaller screens */
+@media screen and (max-width:1000px) {
+div.container{position:relative;padding:0;min-width:800px}
+div.header_pcscreen{position:relative;width:88%;min-width:768px;height:159px}
+div.header_print{position:relative;left:72px}
+div.content{position:relative;margin-left:7%;width:80%;min-width:636px;padding:0 4% 16px;min-height:500px;background-color:white;border:1px solid black;text-align:justify}
+div.menu_row1{position:relative;top:-16px;left:-60px;width:490px;z-index:1}
+div.menu_row2{position:relative;top:-16px;left:-60px;width:672px;z-index:1}
+div.footer{position:absolute;left:0;bottom:10px;width:100%;text-align:center;font-size:62%}
+div.infobox{position:relative;width:90%;min-width:572px;padding:0 32px;text-align:center}
+div.infotext{display:inline-block;vertical-align:initial;width:100%;min-width:572px;text-align:justify}
+div.infolinks{display:inline-block;vertical-align:initial;margin-left:auto;margin-right:auto}
+div.infoicon{display:inline-block;vertical-align:top;margin:16px 32px;font-size:75%;text-align:center}
+div.search{position:absolute;top:18px;right:4px;z-index:3}
+img.padright{padding:0}
+}
+
+
+/* when viewing on a PC screen */
+@media screen {
+.header_print,.image_print{display:none}
+}
+
+
+/* when printing pages */
+@media print {
+html,body{padding:2%;background:#FFF;font-size:80%}
+*{background:transparent;color:#000;box-shadow:none;text-shadow:none;}
+a,a:visited{color:#000;text-decoration:none}
+img{max-width:100%}
+ul,img{page-break-inside: avoid}
+hr.padded{height:.1em;width:100%;border-width:0;color:white;background-color:white;margin:1.5em 0}
+.header_pcscreen,.image_pcscreen,.menu_row1,.menu_row2,.search,.arrow,.bottomspace,.footer{display:none}
+div.content{position:relative;width:90%;background-color:white;border:none;text-align:justify}
+div.contenttext{position:relative;top:0}
+div.infobox{position:relative;width:90%;min-width:572px;padding:0 32px;text-align:center}
+div.infotext{display:inline-block;vertical-align:initial;width:100%;min-width:572px;text-align:justify}
+div.infolinks{display:inline-block;vertical-align:initial;margin-left:auto;margin-right:auto}
+div.infoicon{display:inline-block;vertical-align:top;margin:16px;font-size:75%;text-align:center}
+}
